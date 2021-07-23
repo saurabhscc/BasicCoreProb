@@ -13,6 +13,7 @@ namespace BasicCoreProb
             Console.WriteLine("4 For: Select the Harmonic Number");
             Console.WriteLine("5 For: Select Factors of number");
             Console.WriteLine("6 For: Select Quotient and Remainder");
+            Console.WriteLine("7 For: Select Swap the Numbers");
             int selection = Convert.ToInt32(Console.ReadLine());
 
             switch (selection)
@@ -42,8 +43,13 @@ namespace BasicCoreProb
                     QuotientRemainder QuesRem = new QuotientRemainder();
                     QuesRem.QuotientReminder();
                     break;
+                case 7:
+                    //Swap 2 number
+                    SwapNumbers SwapTwoNo = new SwapNumbers();
+                    SwapTwoNo.SwapTwoNumber();
+                    break;
                 default:
-                    Console.WriteLine("Invalid Selection. Select in Between 1 to 6");
+                    Console.WriteLine("Invalid Selection. Select in Between 1 to 7");
                     break;
             }
             Console.ReadLine();
