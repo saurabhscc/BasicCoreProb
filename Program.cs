@@ -14,6 +14,7 @@ namespace BasicCoreProb
             Console.WriteLine("5 For: Select Factors of number");
             Console.WriteLine("6 For: Select Quotient and Remainder");
             Console.WriteLine("7 For: Select Swap the Numbers");
+            Console.WriteLine("8 For :Select Even and Odd number");
             int selection = Convert.ToInt32(Console.ReadLine());
 
             switch (selection)
@@ -48,8 +49,13 @@ namespace BasicCoreProb
                     SwapNumbers SwapTwoNo = new SwapNumbers();
                     SwapTwoNo.SwapTwoNumber();
                     break;
+                case 8:
+                    // Even Or odd
+                    EvenOrOdd EvenOdd = new EvenOrOdd();
+                    EvenOdd.CheckEvenOrdd();
+                    break;
                 default:
-                    Console.WriteLine("Invalid Selection. Select in Between 1 to 7");
+                    Console.WriteLine("Invalid Selection. Select in Between 1 to 8");
                     break;
             }
             Console.ReadLine();
