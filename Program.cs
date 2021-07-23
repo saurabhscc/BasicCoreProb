@@ -12,6 +12,7 @@ namespace BasicCoreProb
             Console.WriteLine("3 For: Select Power of 2 Number");
             Console.WriteLine("4 For: Select the Harmonic Number");
             Console.WriteLine("5 For: Select Factors of number");
+            Console.WriteLine("6 For: Select Quotient and Remainder");
             int selection = Convert.ToInt32(Console.ReadLine());
 
             switch (selection)
@@ -36,8 +37,13 @@ namespace BasicCoreProb
                     PrimeFactor PrimeFactor = new PrimeFactor();
                     PrimeFactor.CalcSFactorialSeries();
                     break;
+                case 6:
+                    //  quotient remainder
+                    QuotientRemainder QuesRem = new QuotientRemainder();
+                    QuesRem.QuotientReminder();
+                    break;
                 default:
-                    Console.WriteLine("Invalid Selection. Select in Between 1 to 5");
+                    Console.WriteLine("Invalid Selection. Select in Between 1 to 6");
                     break;
             }
             Console.ReadLine();
